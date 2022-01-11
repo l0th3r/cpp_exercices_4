@@ -1,33 +1,16 @@
 #include <iostream>
-#include <map>
-#include <vector>
+#include <list>
 
 #include "ex01.h"
 #include "ex02.h"
 #include "ex03.h"
-
-
+#include "ex04.h"
 
 int main()
 {
-    std::map<std::string, int> numbers {
-        {"One", 1},
-        {"Two", 2},
-        {"tWo", 33},
-        {"Fouur", 432},
-        {"ThRee", 43444},
-        {"tHree", 77},
-        {"Hsdd", 454},
-        {"threE", 43},
-        {"Hello", 988},
-        {"thrEE", 344},
-    };
+    std::list<int> nb {1, 2, 3, 4, 5, 5, 4, 3, 2, 1};
 
-
-    for(int& v : map_get_case_insensitive(numbers, "two"))
-    {
-        std::cout << v << std::endl;
-    }
+    std::cout << is_palindrome(nb.begin(), nb.end()) << std::endl;
 
     return 0;
 }
