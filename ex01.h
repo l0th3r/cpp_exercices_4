@@ -4,8 +4,6 @@
 #include <algorithm>
 #include <string>
 
-#include <iostream>
-
 template <typename V>
 bool is_containing_8(V val)
 {
