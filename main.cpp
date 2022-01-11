@@ -1,9 +1,14 @@
 #include <iostream>
+#include <list>
 
-using namespace std;
+#include "ex01.h"
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    std::list<int> numbers {10, 28, 483};
+
+
+    std::cout << contains_at_least_two_numbers_with_8(numbers) << std::endl;
+
     return 0;
 }
