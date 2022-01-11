@@ -1,0 +1,56 @@
+ex01:
+    Write a function named contains_at_least_two_numbers_with_8 taking any
+    container of numbers as a parameter and returning true if it contains at
+    least two numbers that contains the digit 8 in decimal representation,
+    without using a for loop.
+
+ex02:
+    Write a function named print_sequence taking a sequence of elements that are
+    printable by sending them to a stream and print them line by line.
+    Allow the possibility to specify a delegate as a second argument that converts
+    an element to a string.
+    It should use a for range-based loop.
+    
+ex03:
+    Write a function named map_get_case_insensitive taking as a first parameter
+    a map with strings as keys, and a string as a second parameter, returning
+    a container of all the values in the map whose key is equal to the second
+    parameter, irrespective of the case.
+    It should use a for range-based loop.
+
+ex04:
+    Write an algorithm function named is_palindrome taking pointers or
+    bidirectional iterators to the beginning and the end of a sequence,
+    returning true if all items from the first to the middle are
+    respectively equal to all items from the last to the middle.
+    It should have the least possible memory impact.
+
+ex05:
+    Write a function named contains_zero taking a list of ints as parameter
+    and returns true if the list contains a 0, false otherwise.
+    It should browse the list using iterators from the end to the beginning.
+
+ex06:
+    Write a function named is_correctly_enclosed taking a string as
+    parameter and returning true if the string contains text that has
+    correct enclosing of (), {}, [], <> and "" characters.
+    Example of correctly enclosed text: "[<hello>(2)]"
+    Example of incorrectly enclosed text: "[<hello]>(2)"
+    It should be implemented using a stack.
+    
+ex07:
+    All of the following should be defined into a namespace named cardgame.
+    The code of this exercise should not use any for loop.
+    Write a type card and a type deck.
+    A card should be printable to a stream.
+    The deck type should use a double ended queue.
+    Write a function named generate_deck that returns a full classic deck of
+    52 cards.
+    Write a function fetch_card taking a deck and string representation of a
+    card as parameters and returning a card, having it removed from the deck.
+    Write a function named shuffle taking a deck as a parameter and shuffling it.
+    Write a function named draw taking a deck as a parameter and returning its
+    top card, removing it from the deck.
+    Write a function named put_back taking a deck and a card as a parameter and
+    putting it back at the bottom of the deck.
+    
